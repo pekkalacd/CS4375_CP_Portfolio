@@ -3,4 +3,4 @@ This is the repository for my portfolio projects for the course CS 4375 @ utdall
 
 ## Overview
 
-Here is a <u>link</u> to the overview document prefacing different machine learning branches' algorithms.
+Here is a <u>link<u> to the overview document prefacing different machine learning branches' algorithms.
