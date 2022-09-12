@@ -1,22 +1,22 @@
 # create function for displaying stats
 print_stats <- function(lst,name) {
-	s <- sum(lst[,])
-	md  <- median(lst[,])
-	mn <- mean(lst[,])
-	rg <- range(lst[,])
-	cat("stats for", name)
-	cat("\nsum =", s)
-	cat("\nmedian =", md)
-	cat("\nmean =", mean)
-	cat("\nrange =", rg)
+  s <- sum(lst[,])
+  md  <- median(lst[,])
+  mn <- mean(lst[,])
+  rg <- range(lst[,])
+  cat("\nstats for", name)
+  cat("\nsum =", s)
+  cat("\nmedian =", md)
+  cat("\nmean =", mn)
+  cat("\nrange =", rg, "\n\n")
 }
 
 # create function for displaying covariance & correlation
 print_cov_cor <- function(x,y) {
-	corr <- cor(x[,],y[,])
-	covar <- cov(x[,],y[,])
-	cat("correlation =", corr)
-	cat("\ncovariance =", covar)
+  corr <- cor(x[,],y[,])
+  covar <- cov(x[,],y[,])
+  cat("correlation =", corr)
+  cat("\ncovariance =", covar)
 }
 
 # read in dataset from Boston.csv
