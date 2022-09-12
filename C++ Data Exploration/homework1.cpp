@@ -19,6 +19,12 @@ void debug(vector<double> res) {
 	}
 }
 
+vector<double> copyVect(vector<double> col) {
+	vector<double> cp;
+	cp.assign(col.begin(), col.end());
+	return cp;
+}
+
 // computes the sum of vector elements, returns as double
 double sum(vector<double> col) {
 	double s=0;
@@ -35,22 +41,25 @@ double mean(vector<double> col) {
 
 // computes the median of vector elements, returns as double
 double median(vector<double> col) {
+	vector<double> cp = copyVect(col);
+	sort(cp.begin(), cp.end());
 	int n=col.size();
 	if(n%2==1) {
-		return col.at(n/2);
+		return cp.at(n/2);
 	}
 	double l,r;
-	l=col.at((n/2)-1);
-	r=col.at(n/2);
+	l=cp.at((n/2)-1);
+	r=cp.at(n/2);
 	return (l+r)/2;
 } // end of median
 
 // determines the minimum and maximum values in the input vector, returns as size 2 array of doubles
 std::array<double,2> range(vector<double> col) {
-    sort(col.begin(), col.end());
+	vector<double> cp = copyVect(col);
+    sort(cp.begin(), cp.end());
     std::array<double,2> ans;
-    ans[0] = (col.at(0));
-    ans[1] = (col.at(col.size()-1));
+    ans[0] = (cp.at(0));
+    ans[1] = (cp.at(cp.size()-1));
     return ans;
 } // end of range
 
