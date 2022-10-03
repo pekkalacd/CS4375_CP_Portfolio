@@ -1,0 +1,47 @@
+---
+title: "Regression"
+output: html_notebook
+---
+
+For the data source go to [this kaggle link](https://www.kaggle.com/datasets/ahmettezcantekin/beginner-datasets). It is the dataset labeled **employee.csv**.
+
+This dataset contains metrics regarding the satisfaction level of employees at a company based on performance ratings of their last evaluation, the number of projects they worked, their average monthly hours they worked, their tenure at the company, etc.
+
+
+Attributes:
+
+- **satisfaction_level**: numerical: a score rating employee level of satisfaction
+
+- **last_evaluation**: numerical: a score rating employee last performance evaluation
+
+- **number_project**: numerical: a number for how many projects employee has worked on
+
+- **average_montly_hours**: numerical: a number for the average amount of hours worked per month
+
+- **time_spend_company**: numerical: a number representing an employee's tenure
+
+- **Work_accident**: categorical: an encoded variable (discrete) telling of whether or not employee has ever had a work accident
+
+- **promotion_last_5years**: categorical: an encoded variable (discrete) telling of whether or not employee has had promotion in last 5 years of work 
+
+- **department**: categorical: a string representing the department employee works in
+
+- **salary**: categorical: a string representing how 'high','medium','low' employee salary is
+
+- **left**: categorical: an encoded variable (discrete) telling of whether or not the employee has left the company
+
+
+
+```{r}
+plot(cars)
+```
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+```{r}
+cars$speed
+```
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
+
+The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
