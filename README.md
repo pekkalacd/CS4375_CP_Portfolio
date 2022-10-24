@@ -21,3 +21,7 @@ discriminative classifiers and reproducible research in machine learning.
 ### Searching for Similarity
 
 The [searching for similarity](https://github.com/pekkalacd/CS4375_CP_Portfolio/blob/main/Searching%20for%20Similarity/Searching_for_Similarity.pdf) summary is available at the previous link. The part I was responsible for - in a group of four - was the regression portion, for which the R notebook for that is [here](https://github.com/pekkalacd/CS4375_CP_Portfolio/blob/main/Searching%20for%20Similarity/part1.rmd).
+
+### Kernel and ensemble
+
+The [kernel and ensemble](...) files explore support vector machines for regression (Notebook 1) and classification (Notebook 2), as well as Decision Trees, Random Forest, AdaBoost, and XGBoost ensemble methods (Notebook 3). In addition, the [narrative document] summary generalizes the actions that were taken on this assignment while exploring more about the inner workings, strengths, and weaknesses of these algorithms.  
